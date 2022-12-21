@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International University of Applied Sciences</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav-menu">
+          <div class="logo-container">
+            <img src="img/ui.png" alt="International University of Applied Sciences">
+          </div> 
+          <div id="nav-bar">
+            <ul>
+              <li><a href="#">Bachelor</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">MBA</a></li>
+            </ul>
+          </div>
+          <div id="application-bar">
+            <button class="info">REQUEST FREE INFORMATION</button>
+            <button class="application">APPLY NOW</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="intro">
+        <h1 class="bg-green">Get your free information material</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quaerat fuga itaque dolor sunt earum deserunt nemo expedita magnam provident. Ab animi vel sapiente sit.</p>
+      </div>
+      <form action="" name="formulaire">
+        <div class="form-container">
+          <div class="cell">
+            <label for="study-format" class="required">Study Format</label>
+            <select name="study-format" id="study-format">
+              <option value="" disabled selected hidden>Study Format</option>
+              <option value="on-campus">On Campus</option>
+            </select>
+          </div>
+          <div class="cell">
+            <label for="study-program" class="required">Study Program</label>
+            <select name="study-program" id="study-program" disabled>
+              <option value="" disabled selected hidden></option>
+              <option value="cyber-security">M.Sc. Cyber Security</option>
+            </select>
+          </div>
+          <div class="cell">
+            <label for="english-level">English Level</label>
+            <select name="english-level" id="english-level">
+              <option value="" disabled selected hidden>How comfortable do you feel studying in Eng</option>
+              <option value="good">Good</option>
+              <option value="excellent">Excellent</option>
+              <option value="fluent">Fluent</option>
+              <option value="native">Native</option>
+            </select>
+          </div>
+          <div class="cell">
+            <label for="study-location" class="required">Study-location</label>
+            <select name="study-location" id="study-location">
+              <option value="" disabled selected hidden></option>
+              <option value="London">London</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Paris">Paris</option>
+              <option value="Zurich">Zurich</option>
+              <option value="Madrid">Madrid</option>
+            </select>
+          </div>
+          <div class="cell">
+            <label for="first-name" class="required">First Name</label>
+            <input type="text" name="fname" id="fname" required placeholder="First Name">
+          </div>
+          <div class="cell">
+            <label for="lname" class="required">Last Name</label>
+            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+          </div>
+          <div class="cell">
+            <label for="email" class="required">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="max.mustermann@domain.com">
+          </div>
+          <div class="cell">
+            <label for="phone" class="required">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="+212">
+          </div>
+          <div class="cell">
+            <label for="country" class="required">Country</label>
+            <select name="country" id="country">
+              <option value="" disbled selected hidden>Country of Residence</option>
+              <option value="UK">United Kingdom</option>
+              <option value="France">France</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </div>
+        </div>
+        <div class="confirm-submit">
+          <p class="data-protection">I have read and understood the information on <a href="#">data protection</a></p>
+          <input type="checkbox" name="agree-info" id="agree-info">
+          <label>I agree to receive information about the study programs, events and <span>discount promotions</span> via e-mail. You can unsubscribe from these notifications at any time.</label>
+        </div>
+        <div class="submit">
+          <p><em>* Required fields</em></p>
+          <button type="submit" class="application">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

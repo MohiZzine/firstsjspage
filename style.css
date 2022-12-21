@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-green: rgb(187, 255, 184);
+  --borderblue: rgb(149, 174, 255);
+  --bg-blue: rgb(55, 103, 255);
+  --bg-grey: rgb(245, 244, 243);
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2em;
+}
+
+.form-container label {
+  font-weight: bold;
+  display: block;
+}
+
+label.required::after {
+  content: "*";
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800px;
+}
+
+p {
+  font-weight: 200;
+  font-size: .7rem;
+}
+ul li {
+  list-style-type: none;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--bg-blue);
+}
+
+
+.container {
+  margin: 5px 7%;
+}
+
+/* Main Styling */
+
+/* Heading */
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: 2fr 4fr 7fr;
+  height: 115px;
+}
+
+.logo-container img {
+  margin-top: 5px;
+  height: 110px;
+}
+#nav-bar ul{
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#nav-bar {
+  font-size: 1.1em;
+}
+
+#application-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+button {
+  margin-right: 15px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+button.info {
+  border: 2px solid var(--borderblue);
+  background: #ffffff;
+}
+
+button.application {
+  background: var(--bg-blue);
+  color: #ffffff;
+
+}
+
+/* Body */
+
+/* Form */
+section {
+  margin: 8px auto;
+  background: var(--bg-grey);
+}
+
+.intro h1 {
+  display: inline-block;
+  background: var(--bg-green);
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 3rem;
+}
+
+.intro p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+}
+
+input, select {
+  width: 95%;
+  padding: 14px 22px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+
+/* Submission */
+
+input[type="checkbox"] {
+  display: inline;
+  width: 15px;
+}
+
+.confirm-submit p {
+  margin-top: 8px;
+  font-size: 1em;
+  
+}
+.confirm-submit p:nth-child(1) {
+  display: block;
+}
+
+.confirm-submit p:nth-child(2) {
+  display: inline;
+}
+
+.confirm-submit a {
+  /* text-decoration: none; */
+  color: black;
+  font-weight: bold;
+}
+.confirm-submit span {
+  font-weight: bold;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
